@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+</head>
+
+<body>
+  <div class="min-h-screen min-w-[320px] p-4 flex flex-col bg-Cream">
+    <main class="grow flex justify-center items-center">
+      <div class="max-w-[400px] desktop:max-w-[600px] bg-white rounded-lg flex flex-col desktop:grid desktop:grid-cols-2">
+        <div>
+          <img src="/src/images/image-product-mobile.jpg" alt="Perfume bottle" class="rounded-t-lg desktop:hidden">
+          <img src="/src/images/image-product-desktop.jpg" alt="Perfume bottle"
+            class="rounded-l-lg hidden desktop:block">
+        </div>
+        <section class="flex flex-col gap-5 p-6 justify-between">
+
+          <p class="text-AurometalSaurus text-Overline uppercase">Perfume</p>
+
+          <header class="text-Gunmetal text-Display">Gabrielle Essence Eau De Parfum</header>
+
+          <p class="text-AurometalSaurus text-Body">
+            A floral, solar and voluptuous interpretation composed by Olivier Polge,
+            Perfumer-Creator for the House of CHANEL.
+          </p>
+
+          <div class="flex gap-5 items-center">
+            <span class="text-Display text-DeepAquamarine">$149.99</span>
+            <span
+              class="text-AurometalSaurus font-Montserrat font-medium text-[13px] leading-6 line-through">$169.99</span>
+          </div>
+
+          <button
+            class="bg-DeepAquamarine hover:bg-DeepAquamarineHover text-white rounded-lg py-4 text-ButtonText flex items-center justify-center gap-3">
+            <i class="icon-cart"></i>
+            Add to Cart
+          </button>
+        </section>
+
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Jasper Lai</a>.
+    </footer>
+
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+
+</html>
